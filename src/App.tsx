@@ -1,13 +1,28 @@
-import React from "react";
 import "./App.css";
-import Greetings from "./Components/Greetings";
-import Header from "./Components/Header";
+import Back2Top from "./Components/Back2Top";
+import Activities from "./Containers/Activities";
+import Education from "./Containers/Education";
+import Experience from "./Containers/Experiences";
+import Footer from "./Containers/Footer";
+import Greetings from "./Containers/Greetings";
+import Header from "./Containers/Header";
 
 function App() {
   return (
-    <div className="">
-      <Header />
-      <Greetings />
+    <div>
+      <header>
+        <Header />
+      </header>
+      <main>
+        <Greetings />
+        <Experience />
+        <Education />
+        <Activities />
+      </main>
+      <Back2Top />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
